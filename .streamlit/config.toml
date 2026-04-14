@@ -1,0 +1,56 @@
+[theme]
+base = "light"
+
+# Azul institucional-style UCA
+primaryColor = "#003B7A"
+
+# Fondo principal: blanco roto
+backgroundColor = "#FAFAF7"
+
+# Fondo secundario: azul muy suave para cards/widgets
+secondaryBackgroundColor = "#EEF3F9"
+
+# Texto principal
+textColor = "#1F2937"
+
+# Enlaces
+linkColor = "#003B7A"
+linkUnderline = true
+
+# Tipografía: lo más cercano a Times dentro de las fuentes nativas
+font = "serif"
+headingFont = "serif"
+codeFont = "monospace"
+
+# Ajustes finos
+baseFontSize = 16
+baseFontWeight = 400
+baseRadius = "0.5rem"
+buttonRadius = "0.5rem"
+
+# Bordes suaves
+borderColor = "#D6E0EC"
+dataframeBorderColor = "#D6E0EC"
+dataframeHeaderBackgroundColor = "#E7EEF7"
+showWidgetBorder = true
+
+# Paleta útil para gráficos y métricas
+blueColor = "#003B7A"
+greenColor = "#1F8B4C"
+redColor = "#B23A3A"
+orangeColor = "#C27A00"
+grayColor = "#6B7280"
+
+[theme.sidebar]
+backgroundColor = "#F4F6FA"
+secondaryBackgroundColor = "#EAF0F7"
+textColor = "#1F2937"
+primaryColor = "#003B7A"
+linkColor = "#003B7A"
+font = "serif"
+headingFont = "serif"
+codeFont = "monospace"
+borderColor = "#D6E0EC"
+dataframeBorderColor = "#D6E0EC"
+dataframeHeaderBackgroundColor = "#E7EEF7"
+showWidgetBorder = true
