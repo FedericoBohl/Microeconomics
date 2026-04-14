@@ -255,7 +255,7 @@ def producer_surplus(supply: InverseCurve, q, p):
         q_grid = np.linspace(0, q, 500)
         p_supply = effective_supply_price(supply, q_grid)
         gap = np.maximum(p - p_supply, 0.0)
-        return float(np.trapz(gap, q_grid))
+        return float(np.trapezoid(gap, q_grid))
 
     if supply.kind == "vertical":
         return np.inf
@@ -942,6 +942,41 @@ def compute_plot_bounds(a, c, demand, supply, eq):
 # ============================================================
 # Texto principal
 # ============================================================
+st.markdown(
+    """
+    <div style="
+        background-color: #EEF3F9;
+        border: 1px solid #D6E0EC;
+        border-radius: 10px;
+        padding: 0.85rem 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-family: serif;
+        font-size: 0.98rem;
+        color: #1F2937;
+    ">
+        <span style="font-weight: 700;">Creado por Federico Bohl</span>
+        <span style="margin: 0 0.5rem; color: #6B7280;">·</span>
+        <a href="https://github.com/FedericoBohl" target="_blank"
+           style="color:#003B7A; text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;">
+            <svg height="18" width="18" viewBox="0 0 16 16" aria-hidden="true" style="fill:#003B7A;">
+                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38
+                0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+                .64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82
+                .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+                0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8
+                c0-4.42-3.58-8-8-8Z"></path>
+            </svg>
+            <span>GitHub</span>
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.title("Oferta, demanda y bienestar con controles de precios e impuestos")
 
 with st.sidebar:
