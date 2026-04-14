@@ -18,9 +18,8 @@ linkColor = "#003B7A"
 linkUnderline = true
 
 # Tipografía: lo más cercano a Times dentro de las fuentes nativas
-font = "serif"
+font = "'Libertinus Math' :https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap"
 headingFont = "serif"
-codeFont = "monospace"
 
 # Ajustes finos
 baseFontSize = 16
